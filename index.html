@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webdoku - Web Base Sudoku Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<header>
+    <h1>Webdoku the Game</h1>
+    <Input type="checkbox" id="darkMode" onclick="darkFunction()">Dark Mode</Input>
+</header>
+<body>
+    
+    <div id="setup">
+        <div id="diff">
+            <h3>Choose Difficulty: </h3>
+            <label><input type="radio" name="diff" id="diff1" value="easy" checked>Easy</label>
+            <label><input type="radio" name="diff" id="diff2" value="medium">Medium</label>
+            <label><input type="radio" name="diff" id="diff3" value="hard">Hard</label>
+        </div>
+    </div>
+    <Button><a href="game.html">Start Game!</a></Button>
+    <Button><a href="solver.html">Solve the Game!</a></Button>
+    <button><a href="about.html">About</a></button>
+</body>
+
+<style>
+    button {
+        width: 150px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+</style>
+
+<script>
+    function darkFunction() {
+        if (document.getElementById("darkMode").checked == true) {
+            document.querySelector("body").classList.add("dark");
+        } else {
+            document.querySelector("body").classList.remove("dark");
+        }
+    }
+    
+    function start() {
+        alert("Hello! I am an alert box!!");
+    }
+</script>
+</html>

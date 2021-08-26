@@ -9,31 +9,31 @@
     <link rel="stylesheet" href="style.css">
     <script src="index.js"></script>
 </head>
-<body>
-    <header>
-        <h1>Webdoku</h1>
-        <div id="setup">
-            <div id="diff">
-                <h3>Choose Difficulty: </h3>
-                <label><input type="radio" name="diff" id="diff1" value="easy" checked>Easy</label>
-                <label><input type="radio" name="diff" id="diff2" value="medium">Medium</label>
-                <label><input type="radio" name="diff" id="diff3" value="hard">Hard</label>
-            </div>
-            <div id="time">
-                <h3>Choose Time: </h3>
-                <label><input type="radio" name="time" id="time1" value="min3" checked>3 Min</label>
-                <label><input type="radio" name="time" id="time2" value="min5">5 Min</label>
-                <label><input type="radio" name="time" id="time3" value="min10">10 Min</label>
-            </div>
-            <div id="theme">
-                <h3>Choose Theme: </h3>
-                <label><input type="radio" name="theme" id="theme1" value="light" checked>Light</label>
-                <label><input type="radio" name="theme" id="theme2" value="dark">Dark</label>
-            </div>
+<header>
+    <h1>Webdoku</h1>
+    <div id="setup">
+        <div id="diff">
+            <h3>Choose Difficulty: </h3>
+            <label><input type="radio" name="diff" id="diff1" value="easy" checked>Easy</label>
+            <label><input type="radio" name="diff" id="diff2" value="medium">Medium</label>
+            <label><input type="radio" name="diff" id="diff3" value="hard">Hard</label>
         </div>
-        <button id="start-btn">Create New Game</button>
-    </header>
+        <div id="time">
+            <h3>Choose Time: </h3>
+            <label><input type="radio" name="time" id="time1" value="min3" checked>3 Min</label>
+            <label><input type="radio" name="time" id="time2" value="min5">5 Min</label>
+            <label><input type="radio" name="time" id="time3" value="min10">10 Min</label>
+        </div>
+        <div id="theme">
+            <h3>Choose Theme: </h3>
+            <label><input type="radio" name="theme" id="theme1" value="light" checked>Light</label>
+            <label><input type="radio" name="theme" id="theme2" value="dark">Dark</label>
+        </div>
+    </div>
+    <button id="start-btn">Create New Game</button>
+</header>
 
+<body>
     <div id="stats">
         <p id="timer"></p>
         <p id="lives"></p>
@@ -41,7 +41,7 @@
 
     <div id="game">
         <div id="board"></div>
-        <div id="number-container" class="hidden">
+        <div id="number" class="hidden">
             <p id="num1">1</p>
             <p id="num2">2</p>
             <p id="num3">3</p>
@@ -53,9 +53,9 @@
             <p id="num9">9</p>
         </div>
     </div>
-
-    <footer>
-        <p>Made With Love by Fatkur</p>
-    </footer>
 </body>
+
+<footer>
+    <p>Made With Love by Fatkur</p>
+</footer>
 </html>
